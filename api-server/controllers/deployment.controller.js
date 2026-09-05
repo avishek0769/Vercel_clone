@@ -75,7 +75,7 @@ const deployProject = asyncHandler(async (req, res) => {
         status: "queued",
         data: {
             ...deployment,
-            url: `http://${project.subdomain}.cloudify.avishekadhikary.tech`,
+            url: `http://${project.subdomain}.cloudify.avishekadhikary.in`,
         },
     });
 });

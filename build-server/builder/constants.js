@@ -4,7 +4,7 @@ export const PROJECT_ID = process.env.PROJECT_ID;
 export const DEPLOYMENT_ID = process.env.DEPLOYMENT_ID;
 export const WEBHOOK_SECRET = process.env.WEBHOOK_SECRET;
 export const PATH_TO_PACKAGE_JSON = process.env.PATH_ || "";
-export const API_SERVER_HOST = process.env.API_SERVER_HOST || "https://cloudify.avishekadhikary.tech";
+export const API_SERVER_HOST = process.env.API_SERVER_HOST || "https://cloudify.avishekadhikary.in";
 
 export const AWS_ACCESS_KEY_ID = process.env.AWS_ACCESS_KEY_ID;
 export const AWS_ACCESS_KEY_SECRET = process.env.AWS_ACCESS_KEY_SECRET;

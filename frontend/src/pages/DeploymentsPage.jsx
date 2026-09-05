@@ -332,7 +332,7 @@ function DeploymentsPage({ projects, loadProjectById, refreshTick, refreshAll })
             return `https://${selectedProject.customDomain}`;
         }
         if (selectedProject?.subdomain) {
-            return `https://${selectedProject.subdomain}.cloudify.avishekadhikary.tech`;
+            return `https://${selectedProject.subdomain}.cloudify.avishekadhikary.in`;
         }
         return null;
     }, [selectedProject]);
@@ -703,7 +703,7 @@ function DeploymentsPage({ projects, loadProjectById, refreshTick, refreshAll })
                                             <input
                                                 type="text"
                                                 readOnly
-                                                value={`${selectedProject?.subdomain || "your-slug"}.cloudify.avishekadhikary.tech`}
+                                                value={`${selectedProject?.subdomain || "your-slug"}.cloudify.avishekadhikary.in`}
                                                 className="dns-val-input mono"
                                             />
                                             <div style={{ position: "relative", display: "inline-flex", alignItems: "center" }}>
@@ -711,7 +711,7 @@ function DeploymentsPage({ projects, loadProjectById, refreshTick, refreshAll })
                                                     type="button"
                                                     className="btn btn-ghost btn-copy"
                                                     onClick={() => {
-                                                        navigator.clipboard.writeText(`${selectedProject?.subdomain || "your-slug"}.cloudify.avishekadhikary.tech`);
+                                                        navigator.clipboard.writeText(`${selectedProject?.subdomain || "your-slug"}.cloudify.avishekadhikary.in`);
                                                         setCopiedCname(true);
                                                         setTimeout(() => setCopiedCname(false), 2000);
                                                     }}

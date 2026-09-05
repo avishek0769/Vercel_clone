@@ -124,13 +124,13 @@ function ProjectsPage({
                                     <div className="db-project-domain-item">
                                         <span className="db-meta-label mono">DEPLOYED SUBDOMAIN</span>
                                         <a
-                                            href={`https://${project.subdomain}.cloudify.avishekadhikary.tech`}
+                                            href={`https://${project.subdomain}.cloudify.avishekadhikary.in`}
                                             target="_blank"
                                             rel="noreferrer"
                                             className="db-project-link mono"
                                             onClick={(event) => event.stopPropagation()}
                                         >
-                                            https://{project.subdomain}.cloudify.avishekadhikary.tech
+                                            https://{project.subdomain}.cloudify.avishekadhikary.in
                                         </a>
                                     </div>
 

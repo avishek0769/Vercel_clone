@@ -10,7 +10,7 @@ This project is split into four main services:
 
 - **`api-server`**: An Express.js backend using Prisma ORM with PostgreSQL. It handles user authentication, project details, deployment queuing via AWS ECS (Fargate), and log streaming from the build container.
 - **`build-server`**: A containerized task (Docker) that clones a user's GitHub repository, installs dependencies, builds the project, and pushes the built static assets to AWS S3.
-- **`s3-reverse-proxy`**: A Node.js reverse proxy that dynamically maps subdomains (e.g., `https://my-app.cloudify.avishekadhikary.tech`) to the correct S3 bucket prefix, streaming the built files back to the user.
+- **`s3-reverse-proxy`**: A Node.js reverse proxy that dynamically maps subdomains (e.g., `https://my-app.cloudify.avishekadhikary.in`) to the correct S3 bucket prefix, streaming the built files back to the user.
 - **`frontend`**: A React single-page application built with Vite. It features a modern dark-themed dashboard to manage projects and track deployments in real-time.
 
 ## Key Features
@@ -19,7 +19,7 @@ This project is split into four main services:
 - **Project Management**: Create projects linked to public GitHub URLs and claim custom subdomains.
 - **Serverless Build Pipeline**: Deployments spin up isolated AWS ECS Fargate tasks to securely build projects in an automated, scalable fashion.
 - **Real-Time Logs**: View both persistent build logs and live streaming events from the build container.
-- **Wildcard Subdomain Routing**: Deployed apps are instantly accessible via your custom `*.cloudify.avishekadhikary.tech` subdomain.
+- **Wildcard Subdomain Routing**: Deployed apps are instantly accessible via your custom `*.cloudify.avishekadhikary.in` subdomain.
 - **Monorepo Support**: Optionally specify a `pathToPackageJson` to build specific apps within a larger repository.
 
 ## 🛠 Tech Stack

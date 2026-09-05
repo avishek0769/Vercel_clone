@@ -63,7 +63,7 @@ function CreateProjectModal({
     };
 
     const handleCopyTarget = () => {
-        const target = `${projectForm.slug || "your-slug"}.cloudify.avishekadhikary.tech`;
+        const target = `${projectForm.slug || "your-slug"}.cloudify.avishekadhikary.in`;
         navigator.clipboard.writeText(target);
         alert(`Copied: ${target}`);
     };
@@ -113,7 +113,7 @@ function CreateProjectModal({
                                 placeholder="my-cool-app"
                                 required
                             />
-                            <span className="input-suffix">.cloudify.avishekadhikary.tech</span>
+                            <span className="input-suffix">.cloudify.avishekadhikary.in</span>
                         </div>
                     </label>
 
@@ -206,7 +206,7 @@ function CreateProjectModal({
                                             <input
                                                 type="text"
                                                 readOnly
-                                                value={`${projectForm.slug || "your-slug"}.cloudify.avishekadhikary.tech`}
+                                                value={`${projectForm.slug || "your-slug"}.cloudify.avishekadhikary.in`}
                                                 className="dns-val-input mono"
                                             />
                                             <button
